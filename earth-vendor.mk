@@ -836,9 +836,7 @@ PRODUCT_PACKAGES += \
     ImsService \
     MtkGbaService \
     mediatek-ims-base \
-    mediatek-ims-common \
     mediatek-ims-extension-plugin \
-    mediatek-telecom-common \
     mediatek-telephony-base \
     android.hardware.biometrics.fingerprint@2.1-service.xml \
     android.hardware.usb@1.2-service-mediatekv2.xml \
@@ -901,7 +899,5 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     mediatek-ims-base \
-    mediatek-ims-common \
     mediatek-ims-extension-plugin \
-    mediatek-telecom-common \
     mediatek-telephony-base
