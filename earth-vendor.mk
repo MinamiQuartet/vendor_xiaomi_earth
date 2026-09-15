@@ -7,6 +7,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/earth/proprietary/odm/etc/init/aether/android.hardware.secure_element@1.2-service-mediatek.rc:$(TARGET_COPY_OUT_ODM)/etc/init/aether/android.hardware.secure_element@1.2-service-mediatek.rc \
+    vendor/xiaomi/earth/proprietary/system_ext/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.vtservice.rc \
     vendor/xiaomi/earth/proprietary/vendor/etc/.tp/.ht120.mtc:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.ht120.mtc \
     vendor/xiaomi/earth/proprietary/vendor/etc/.tp/.thermal_policy_00:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_00 \
     vendor/xiaomi/earth/proprietary/vendor/etc/.tp/.thermal_policy_03:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_03 \
@@ -820,6 +821,28 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.videotelephony@1.0_vendor \
     vendor.silead.hardware.fingerprintext@1.0 \
     wechat.beanpod \
+    libcomutils \
+    libimsma \
+    libimsma_adapt \
+    libimsma_rtp \
+    libimsma_socketwrapper \
+    libmtk_vt_service \
+    libmtk_vt_wrapper \
+    libsignal \
+    libsink-mtk \
+    libsource \
+    libvcodec_cap \
+    libvcodec_capenc \
+    libvt_avsync \
+    vendor.mediatek.hardware.videotelephony-V1-ndk \
+    vendor.mediatek.hardware.videotelephony@1.0 \
+    ImsService \
+    MtkGbaService \
+    mediatek-ims-base \
+    mediatek-ims-common \
+    mediatek-ims-extension-plugin \
+    mediatek-telecom-common \
+    mediatek-telephony-base \
     android.hardware.biometrics.fingerprint@2.1-service.xml \
     android.hardware.usb@1.2-service-mediatekv2.xml \
     gnss-mtk.xml \
@@ -868,7 +891,8 @@ PRODUCT_PACKAGES += \
     vpud \
     wlan_assistant \
     wmt_launcher \
-    wmt_loader
+    wmt_loader \
+    vtservice
 
 PRODUCT_PACKAGES += \
     vendor_bin_hw_android_hardware_media_c2@1_2-mediatek \
@@ -878,3 +902,10 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libdpframework_so \
     vendor_lib64_libmtk_drvb_so \
     vendor_lib64_libpq_prot_so
+
+PRODUCT_BOOT_JARS += \
+    mediatek-ims-base \
+    mediatek-ims-common \
+    mediatek-ims-extension-plugin \
+    mediatek-telecom-common \
+    mediatek-telephony-base
