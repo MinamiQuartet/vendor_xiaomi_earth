@@ -377,7 +377,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     arm.graphics-V1-ndk_platform \
-    vendor.mediatek.hardware.bluetooth.audio@2.2-impl \
     libJpgEncPipe \
     libbluetooth_audio_session_mediatek \
     libbluetooth_mtk \
@@ -404,8 +403,6 @@ PRODUCT_PACKAGES += \
     libvpu5 \
     libmtk_drvb \
     vendor.mediatek.hardware.audio@6.1 \
-    vendor.mediatek.hardware.bluetooth.audio@2.1 \
-    vendor.mediatek.hardware.bluetooth.audio@2.2 \
     vendor.mediatek.hardware.mms@1.0 \
     vendor.mediatek.hardware.mms@1.1 \
     vendor.mediatek.hardware.mms@1.2 \
